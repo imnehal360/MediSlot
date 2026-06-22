@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+/* Theme Variables */
+@theme {
+  --color-primary: #5f6fff;
+}
+
+/* Custom Utility for Auto-Fill Grid */
+@utility grid-cols-auto {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+/* Hide hr by default */
+a hr {
+  display: none;
+}
+
+/* Show hr for active NavLink */
+.active hr {
+  display: block;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
